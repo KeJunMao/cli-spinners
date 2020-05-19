@@ -1,9 +1,9 @@
-interface Spinner {
+export interface Spinner {
 	readonly interval: number;
 	readonly frames: string[];
 }
 
-type SpinnerName =
+export type SpinnerName =
 	| "dots"
 	| "dots2"
 	| "dots3"
@@ -76,7 +76,7 @@ type SpinnerName =
 	| "layer"
 	| "betaWave";
 
-type SpinnersJson = Record<SpinnerName, Spinner>;
+export type SpinnersJson = Record<SpinnerName, Spinner>;
 
 const spinnersJson: SpinnersJson = {
 	dots: {
